@@ -35,6 +35,11 @@ commands.add('cmd', (arg) => {
 });
 
 //COMMANDS HERE
+commands.add('loop',(arg) => {
+    for (let i = 0; i < arg[0]; i++) {
+        msg.channel.send(i);
+    }
+});
 
 
 bot.on('ready', () => {
