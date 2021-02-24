@@ -26,3 +26,4 @@ mkdir build
 echo.
 echo Installing dependencies...
 call npm install
+del setup.bat
