@@ -31,7 +31,7 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 
 <br/><br/>
 
-## Run Windows CMD command
+## Run Windows CMD commands
 
 #### $cmd
 ```
