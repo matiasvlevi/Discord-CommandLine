@@ -20,21 +20,16 @@ commands.add('cmd', (arg) => {
                 if (stdout.length >= 2000) {
                     msg.channel.send('The output of this command is too large (2000 characters or more) for discord to display...');
                 } else {
-                    msg.channel.send(stdout);
+                    msg.channel.send('```'+stdout+'```');
                 }
             }
         }
     });
 
-
+    return undefined;
 });
 
 //COMMANDS HERE
-commands.add('loop',(arg) => {
-    for (let i = 0; i < arg[0]; i++) {
-        msg.channel.send(i);
-    }
-});
 
 
 bot.on('ready', () => {
@@ -69,7 +64,7 @@ bot.on('message', msg => {
 
                             }
                         } else {
-                            msg.channel.send('Executed command, no output.');
+                            //msg.channel.send('Executed command, no output.');
                         }
 
                     }

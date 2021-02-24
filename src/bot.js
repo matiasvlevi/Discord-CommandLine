@@ -31,7 +31,7 @@ bot.on('message', msg => {
 
                             }
                         } else {
-                            msg.channel.send('Executed command, no output.');
+                            //msg.channel.send('Executed command, no output.');
                         }
 
                     }

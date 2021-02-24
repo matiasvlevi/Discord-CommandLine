@@ -11,11 +11,11 @@ commands.add('cmd', (arg) => {
                 if (stdout.length >= 2000) {
                     msg.channel.send('The output of this command is too large (2000 characters or more) for discord to display...');
                 } else {
-                    msg.channel.send(stdout);
+                    msg.channel.send('```'+stdout+'```');
                 }
             }
         }
     });
 
-
+    return undefined;
 });
