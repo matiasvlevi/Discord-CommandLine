@@ -26,9 +26,7 @@ bot.on('message', msg => {
                             if (ans.length >= 2000) {
                                 msg.channel.send('The output of this command is too large (2000 characters or more) for discord to display...');
                             } else {
-
                                 msg.channel.send(ans);
-
                             }
                         } else {
                             //msg.channel.send('Executed command, no output.');
@@ -39,7 +37,7 @@ bot.on('message', msg => {
 
 
             // Run JS code
-        } else if (msg.content.charAt(0) == "`" && settings.allowJS == true){
+        } else if (msg.content.charAt(0) == "`" && msg.content.charAt(1) == "`" && msg.content.charAt(2) == "`" && msg.content.charAt(3) == "j" && settings.allowJS == true){
 
                 let pre = msg.content.slice(0,5);
                 let code = msg.content.slice(5,msg.content.length-4);
