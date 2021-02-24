@@ -6,10 +6,10 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 * Run windows CMD commands on the local machine.
 * Run JS scripts.
 
-<br/>
+<br/><br/>
 
 
-### Setup
+## Setup
 
 1. Run `setup.bat` to create all the base files & install dependencies.
 <br/>
@@ -29,9 +29,9 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 
 4. Launch `run.bat` to start the bot.
 
-<br/>
+<br/><br/>
 
-### Default Discord Commands
+## Default Discord Commands
 
 #### $cmd
 ```
@@ -60,9 +60,9 @@ Volume in drive C is Windows
 ```
 
 
-<br/>
+<br/><br/>
 
-### Add Custom Commands
+## Add Custom Commands
 
 Add the custom commands in `user/commands.js`.
 
@@ -70,9 +70,9 @@ Add the custom commands in `user/commands.js`.
 commands.add('COMMAND_NAME', function );
 ```
 
-<br/>
+<br/><br/>
 
-### Custom Command examples
+## Custom Command examples
 
 
 
@@ -136,7 +136,7 @@ Executed command, no output.
 ```
 <br/><br/>
 
-### Run JS scripts
+## Run JS scripts
 
 The `allowJS` property in `user/options.json` should be set to `"true"` for the feature to be enabled.
 
