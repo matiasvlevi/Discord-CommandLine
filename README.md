@@ -25,7 +25,7 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 }
 ```
 <br/>
-3. Add commands in the `user/commands.js` file. [See how](#Custom-Command-examples)
+3. Add commands in the `user/commands.js` file.
 
 4. Launch `run.bat` to start the bot.
 
