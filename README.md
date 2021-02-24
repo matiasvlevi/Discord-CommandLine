@@ -14,7 +14,7 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 1. Run `setup.bat` to create all the base files & install dependencies.
 <br/>
 
-2. Add your bot token & the ID of your discord server channel in the `user/options.json` files.
+2. Add your bot token & the ID of your discord server channel in the `user/options.json` files. You can obtain a token from the [Discord Dev Protal](https://discord.com/developers/applications) after having created a new Application or Discord bot.
 ```
 {
     "token":"",
