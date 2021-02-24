@@ -13,8 +13,9 @@
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
+    "grunt-contrib-concat": "^1.0.1",
     "ip": "^1.1.5",
-    "math": "0.0.3",
     "mathjs": "^7.6.0"
-  }
+  },
+  "devDependencies": {}
 }
