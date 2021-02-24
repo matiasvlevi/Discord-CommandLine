@@ -22,7 +22,7 @@ echo !multiline!
 echo !multiline!>options.json
 
 cd..
+mkdir build
 echo.
 echo Installing dependencies...
 call npm install
-del setup.bat
