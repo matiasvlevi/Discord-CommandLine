@@ -1,5 +1,5 @@
 # Discord-CommandLine
-Discord-CommandLine is a template of a discord bot, made to simply add custom commands & run CMD commands on the local machine.
+Discord-CommandLine is a template for a discord bot, made to simply add custom commands & run CMD commands on the local machine.
 
 ### Features
 * Create custom commands for a Discord bot.
