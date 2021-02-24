@@ -39,13 +39,13 @@ $cmd yourCMDcommand
 
 ```
 
-###### Example
+##### Example
 
-User input in discord channel:
+User input in discord channel :
 ```
 $cmd dir
 ```
-Bot reply:
+Bot reply :
 ```
 Volume in drive C is Windows
  Volume Serial Number is XXXX-XXXX
@@ -59,6 +59,12 @@ Volume in drive C is Windows
                2 Dir(s)  74,909,536,256 bytes free
 ```
 
+##### Add `&&` to write multiple cmd commands
+
+try : 
+```
+$cmd cd.. && dir
+```
 
 <br/><br/>
 
@@ -83,12 +89,12 @@ commands.add('ping',() => (
 ));
 ```
 
-User input in discord channel:
+User input in discord channel :
 ```
 $ping
 ```
 
-Bot reply:
+Bot reply :
 ```
 pong
 ```
@@ -101,12 +107,12 @@ commands.add('mult',(arg) => (
     arg[0] * arg[1]
 ));
 ```
-User input in discord channel:
+User input in discord channel :
 ```
 $mult 4 5
 ```
 
-Bot reply:
+Bot reply :
 ```
 20
 ```
@@ -121,12 +127,12 @@ commands.add('loop',(arg) => {
     }
 });
 ```
-User input in discord channel:
+User input in discord channel :
 ```
 $loop 4
 ```
 
-Bot reply:
+Bot reply :
 ```
 0
 1
@@ -142,7 +148,7 @@ The `allowJS` property in `user/options.json` should be set to `"true"` for the 
 
 #### Example
 
-User input in discord channel:
+User input in discord channel :
 
 ```
     ```js
@@ -151,7 +157,7 @@ User input in discord channel:
     msg.channel.send(a+b);
     ```
 ```
-Bot reply:
+Bot reply :
 
 ```
 14
