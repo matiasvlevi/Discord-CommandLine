@@ -11,6 +11,8 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 
 ## Setup
 
+You need grunt-cli to run the setup. See [grunt getting started](https://gruntjs.com/getting-started)
+
 1. Run `setup.bat` to create all the base files & install dependencies.
 <br/>
 
