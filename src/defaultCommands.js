@@ -1,8 +1,3 @@
-// TEST COMMAND:
-commands.add('ping',() => (
-    'pong'
-));
-
 // RUN CMD COMMAND:
 commands.add('cmd', (arg) => {
     //Combine arguments to create a batch command
