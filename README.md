@@ -22,7 +22,7 @@ You need grunt-cli to run the setup. See [grunt getting started](https://gruntjs
     "token":"",
     "channel_ID":"",
     "prefix":"$",
-    "allowJS":"true",
+    "allowJS":"false",
     "log":"true"
 }
 ```
