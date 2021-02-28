@@ -15,11 +15,11 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 
 ## Setup
 
-#### 1
+#### Step 1
 Run `setup.bat` to create all the base files & install dependencies.
 <br/>
 
-#### 2
+#### Step 2
 Add your bot token & the ID of your discord server channel in the `user/options.json` files. You can obtain a token from the [Discord Dev Protal](https://discord.com/developers/applications) after having created a new Application & Discord bot.
 ```
 {
@@ -36,10 +36,10 @@ See how to obtain a Discord Bot & its token [here](https://www.writebots.com/dis
 
 <br/>
 
-#### 3
-Add commands in the `user/commands.js` file.
+#### Step 3 (Optional)
+Add custom command bindings in the `user/commands.js` file.
 
-#### 4
+#### Step 4
 Launch `run.bat` to start the bot.
 
 <br/><br/>
