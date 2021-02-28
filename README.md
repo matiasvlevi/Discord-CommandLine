@@ -31,7 +31,9 @@ Add your bot token & the ID of your discord server channel in the `user/options.
 }
 ```
 See how you can obtain your channel ID [here](https://www.swipetips.com/how-to-get-channel-id-in-discord/)
+
 See how to obtain a Discord Bot & its token [here](https://www.writebots.com/discord-bot-token/)
+
 <br/>
 
 #### 3
