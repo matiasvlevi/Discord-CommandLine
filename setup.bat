@@ -26,5 +26,6 @@ echo //index > index.js
 cd..
 echo.
 echo Installing dependencies...
+call npm i grunt-cli -g
 call npm install
 del setup.bat
