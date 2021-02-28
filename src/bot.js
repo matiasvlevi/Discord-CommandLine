@@ -3,7 +3,7 @@ bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
 });
 bot.on('message', msg => {
-    if (msg.author.username !== "Dann") {
+
         if (msg.channel.id == settings.channel_ID) {
             if (msg.content.charAt(0) == settings.prefix) {
 
@@ -17,22 +17,48 @@ bot.on('message', msg => {
 
                     //Apply condition
                     let cond = eval(request.condition);
-                    if (cond) {
-                        //Run requested function
-                        let f = eval(request.func);
-                        let ans = f(params);
-                        if (ans !== undefined) {
-                            console.log(' return: ',[ans]);
-                            if (ans.length >= 2000) {
-                                msg.channel.send('The output of this command is too large (2000 characters or more) for discord to display...');
-                            } else {
-                                msg.channel.send(ans);
-                            }
-                        } else {
-                            //msg.channel.send('Executed command, no output.');
-                        }
 
+                    if (cond) {
+                        if (request.permissions == 'ALL') {
+
+                            //Run requested function
+                            let f = eval(request.func);
+                            let ans = f(params);
+                            if (ans !== undefined) {
+                                console.log(' return: ',[ans]);
+                                if (ans.length >= 2000) {
+                                    msg.channel.send('The output of this command is too large (2000 characters or more) for discord to display...');
+                                } else {
+                                    msg.channel.send(ans);
+                                }
+                            } else {
+                                //msg.channel.send('Executed command, no output.');
+                            }
+
+
+                        } else if (request.permissions.indexOf(msg.author.username) !== -1 && request.permissions !== 'ALL') {
+
+                            //Run requested function
+                            let f = eval(request.func);
+                            let ans = f(params);
+                            if (ans !== undefined) {
+                                console.log(' return: ',[ans]);
+                                if (ans.length >= 2000) {
+                                    msg.channel.send('The output of this command is too large (2000 characters or more) for discord to display...');
+                                } else {
+                                    msg.channel.send(ans);
+                                }
+                            } else {
+                                //msg.channel.send('Executed command, no output.');
+                            }
+
+                        } else {
+                            msg.channel.send('You do not have the permissions to run this command.');
+                        }
                     }
+
+
+
                 }
             // Run JS code
         } else if (msg.content.charAt(0) == "`" && msg.content.charAt(1) == "`" && msg.content.charAt(2) == "`" && msg.content.charAt(3) == "j" && settings.allowJS == true){
@@ -47,7 +73,7 @@ bot.on('message', msg => {
                 }
             }
         }
-    }
+
 });
 if (settings.token.length > 0 || settings.channel_ID.length > 0) {
     if (settings.prefix.length > 0 ) {
