@@ -6,17 +6,21 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 * Run windows CMD commands on the local machine.
 * Run JS scripts.
 
+### Requirements
+
+* Nodejs (npm)
+
 <br/><br/>
 
 
 ## Setup
 
-You need grunt-cli to run the setup. See [grunt getting started](https://gruntjs.com/getting-started)
-
-1. Run `setup.bat` to create all the base files & install dependencies.
+#### 1
+Run `setup.bat` to create all the base files & install dependencies.
 <br/>
 
-2. Add your bot token & the ID of your discord server channel in the `user/options.json` files. You can obtain a token from the [Discord Dev Protal](https://discord.com/developers/applications) after having created a new Application or Discord bot.
+#### 2
+Add your bot token & the ID of your discord server channel in the `user/options.json` files. You can obtain a token from the [Discord Dev Protal](https://discord.com/developers/applications) after having created a new Application & Discord bot.
 ```
 {
     "token":"",
@@ -26,11 +30,15 @@ You need grunt-cli to run the setup. See [grunt getting started](https://gruntjs
     "log":"true"
 }
 ```
+See how you can obtain your channel ID [here](https://www.swipetips.com/how-to-get-channel-id-in-discord/)
+See how to obtain a Discord Bot & its token [here](https://www.writebots.com/discord-bot-token/)
 <br/>
 
-3. Add commands in the `user/commands.js` file.
+#### 3
+Add commands in the `user/commands.js` file.
 
-4. Launch `run.bat` to start the bot.
+#### 4
+Launch `run.bat` to start the bot.
 
 <br/><br/>
 
@@ -63,7 +71,7 @@ Volume in drive C is Windows
 
 ##### Add `&&` to write multiple cmd commands
 
-try : 
+try :
 ```
 $cmd cd.. && dir
 ```

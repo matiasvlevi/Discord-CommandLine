@@ -5,8 +5,6 @@ set ^"LF=^
 %= This creates a Line Feed character =%
 ^"
 
-
-
 set "multiline=@echo off!LF!title Discord Bot!LF!call grunt concat!LF!cd build!LF!:a!LF!node index.js!LF!TIMEOUT /t 5 /NOBREAK!LF!goto a"
 echo !multiline!
 echo !multiline!>run.bat
@@ -23,6 +21,9 @@ echo !multiline!>options.json
 
 cd..
 mkdir build
+cd build
+echo //index > index.js
+cd..
 echo.
 echo Installing dependencies...
 call npm install

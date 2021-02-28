@@ -34,8 +34,6 @@ bot.on('message', msg => {
 
                     }
                 }
-
-
             // Run JS code
         } else if (msg.content.charAt(0) == "`" && msg.content.charAt(1) == "`" && msg.content.charAt(2) == "`" && msg.content.charAt(3) == "j" && settings.allowJS == true){
 
