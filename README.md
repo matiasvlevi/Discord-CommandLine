@@ -26,7 +26,7 @@ Add your bot token & the ID of your discord server channel in the `user/options.
     "token":"",
     "channel_ID":"",
     "prefix":"$",
-    "allowJS":"true",
+    "allowJS":"false",
     "log":"true"
 }
 ```
