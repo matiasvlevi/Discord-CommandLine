@@ -13,7 +13,7 @@ commands.add('cmd', (arg) => {
                     let arr = segment(stdout);
 
                     for (let i = 0; i < arr.length;i++) {
-                        msg.channel.send(arr[i]);
+                        msg.channel.send('```' + arr[i] + '```');
                     }
                     //msg.channel.send('The output of this command is too large (2000 characters or more) for discord to display...');
                 } else {
