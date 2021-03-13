@@ -62,7 +62,7 @@ Bot reply :
 Volume in drive C is Windows
  Volume Serial Number is XXXX-XXXX
 
- Directory of C:\Your\Path\to\repo\CommandLine-DiscordBot\build
+ Directory of C:\Your\Path\to\repo\Discord-CommandLine\build
 
 2021-02-24  09:47 AM    <DIR>          .
 2021-02-24  09:47 AM    <DIR>          ..
@@ -85,7 +85,7 @@ $cmd cd.. && dir
 Add the custom commands in `user/commands.js`.
 
 ```js
-commands.add('COMMAND_NAME', function );
+commands.add('COMMAND_NAME', function , permissions);
 ```
 
 <br/><br/>
@@ -152,6 +152,17 @@ Bot reply :
 3
 Executed command, no output.
 ```
+
+<br/><br/>
+#### Add permissions to a command
+
+
+```js
+commands.add('ping',(arg) => {
+    'pong'
+},['UserA','UserC']);
+```
+`UserB` would not be able to use this command while `UserA` & `UserC` have access. You might want to disable `allowJS` because this allows for permissions changes.
 <br/><br/>
 
 ## Run JS scripts
@@ -164,13 +175,13 @@ User input in discord channel :
 
 ```
     ```js
-    let a = 10;
-    let b = 4;
-    msg.channel.send(a+b);
+        let a = 10;
+        let b = 4;
+        msg.channel.send(a+b);
     ```
 ```
-Bot reply :
 
+Bot reply :
 ```
 14
 ```

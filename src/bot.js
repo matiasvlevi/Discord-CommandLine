@@ -61,15 +61,19 @@ bot.on('message', msg => {
 
                 }
             // Run JS code
-        } else if (msg.content.charAt(0) == "`" && msg.content.charAt(1) == "`" && msg.content.charAt(2) == "`" && msg.content.charAt(3) == "j" && settings.allowJS == true){
+            } else if (msg.content.charAt(0) == "`" && msg.content.charAt(1) == "`" && msg.content.charAt(2) == "`" && msg.content.charAt(3) == "j" && settings.allowJS == true){
 
-                let pre = msg.content.slice(0,5);
-                let code = msg.content.slice(5,msg.content.length-4);
-                let suffix = msg.content.slice(msg.content.length-4,msg.content.length-1)
-                try {
-                    let js = eval(code);
-                } catch(err) {
-                    msg.channel.send('Syntax Error');
+                if (settings.accessJS.indexOf(msg.author.username) !== -1 && settings.accessJS !== 'ALL') {
+                    let pre = msg.content.slice(0,5);
+                    let code = msg.content.slice(5,msg.content.length-4);
+                    let suffix = msg.content.slice(msg.content.length-4,msg.content.length-1)
+                    try {
+                        let js = eval(code);
+                    } catch(err) {
+                        msg.channel.send('Syntax Error');
+                    }
+                } else {
+                    msg.channel.send('You do not have the permissions to run JS scripts.');
                 }
             }
         }
