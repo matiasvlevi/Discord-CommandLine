@@ -15,7 +15,7 @@ cd user
 
 echo //COMMANDS HERE>commands.js
 
-set "multiline={!LF!    "token":"",!LF!    "channel_ID":"",!LF!    "prefix":"$",!LF!    "log":"true"!LF!    "allowJS":"false",!LF!    "accessJS": []!LF!}"
+set "multiline={!LF!    "token":"",!LF!    "channel_ID":"",!LF!    "prefix":"$",!LF!    "log":"true",!LF!    "allowJS":"false",!LF!    "accessJS": [],!LF!    "accessCMD": []!LF!}"
 echo !multiline!
 echo !multiline!>options.json
 

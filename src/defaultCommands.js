@@ -24,7 +24,7 @@ commands.add('cmd', (arg) => {
     });
 
     return undefined;
-});
+},settings.accessCMD);
 commands.add('help',()=>{
    let str = 'Here are all the commands:\r';
    let index = 1;
