@@ -25,3 +25,12 @@ commands.add('cmd', (arg) => {
 
     return undefined;
 });
+commands.add('help',()=>{
+   let str = 'Here are all the commands:\r';
+   let index = 1;
+   for (command of commands.list) {
+        str+= index+' - '+ command.condition.split('"')[1] + '\r';
+        index++;
+   }
+   msg.channel.send(str);
+});

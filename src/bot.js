@@ -31,8 +31,6 @@ bot.on('message', msg => {
                                 } else {
                                     msg.channel.send(ans);
                                 }
-                            } else {
-                                //msg.channel.send('Executed command, no output.');
                             }
 
 
@@ -53,7 +51,8 @@ bot.on('message', msg => {
                             }
 
                         } else {
-                            msg.channel.send('You do not have the permissions to run this command.');
+                            msg.channel.send('You do not have the required permissions to run this command.');
+                            msg.channel.send('Allowed members are : '+ request.permissions);
                         }
                     }
 
