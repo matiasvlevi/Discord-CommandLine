@@ -152,7 +152,6 @@ Bot reply :
 1
 2
 3
-Executed command, no output.
 ```
 
 <br/><br/>
