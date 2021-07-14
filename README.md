@@ -163,7 +163,7 @@ commands.add('ping',(arg) => {
     'pong'
 },['UserA','UserC']);
 ```
-`UserB` would not be able to use this command while `UserA` & `UserC` have access. You might want to disable `allowJS` because this allows for permissions changes.
+`UserB` would not be able to use this command while `UserA` & `UserC` can. You might want to disable `allowJS` because this allows for permissions changes.
 <br/><br/>
 
 ## Run JS scripts
