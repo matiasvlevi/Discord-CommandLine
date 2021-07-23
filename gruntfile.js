@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-    grunt.initConfig({
+    const config = {
         concat: {
             dist: {
                 //Add your files in the `src` array (order matters):
@@ -12,8 +12,15 @@ module.exports = function(grunt) {
                 dest: 'build/index.js'
             },
         }
+    }
 
-    });
+    grunt.initConfig(config);
     grunt.loadNpmTasks('grunt-contrib-concat');
-
+    grunt.loadTasks('tasks');
+    grunt.registerTask('build',[
+        'concat'
+    ]);
+    grunt.registerTask('setup', [
+        'write'
+    ]);
 }
