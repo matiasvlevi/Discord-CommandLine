@@ -3,7 +3,7 @@ Discord-CommandLine is a template for a discord bot, made to simply add custom c
 
 ### Features
 * Create custom commands for a Discord bot.
-* Run windows CMD commands on the local machine.
+* Run windows CMD commands on your local machine.
 * Run JS scripts.
 
 ### Requirements
@@ -163,7 +163,7 @@ commands.add('ping',(arg) => {
     'pong'
 },['UserA','UserC']);
 ```
-`UserB` would not be able to use this command while `UserA` & `UserC` have access. You might want to disable `allowJS` because this allows for permissions changes.
+`UserB` would not be able to use this command while `UserA` & `UserC` can. You might want to disable `allowJS` because this allows for permissions changes.
 <br/><br/>
 
 ## Run JS scripts
